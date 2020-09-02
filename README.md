@@ -40,7 +40,7 @@
     
         flask run
 
-## **Use app in browser**
+### **Use app in browser**
 
     Go to the address your console show
 
