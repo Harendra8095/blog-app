@@ -2,7 +2,6 @@
 ### A basic blog app using flask
 --------------------------
 ## Setup instructions
---------------------------
 ### **Server**
 * **Step 1 (optional but recommended)**
 
