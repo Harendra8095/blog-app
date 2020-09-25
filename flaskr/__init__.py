@@ -20,6 +20,11 @@ def create_app(test_config=None):
     def hello():
         return 'Hello, World again!'
 
+    @app.route('/favicon.ico')
+    def favicon():
+        return send_from_directory(os.path.join(app.root_path, "static"), "favicon.ico", mimetype='image/vnd.microsoft.com')
+
+
     from . import db
     db.init_app(app)
 
