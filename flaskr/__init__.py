@@ -1,5 +1,6 @@
 import os
 from flask import Flask
+from flask import send_from_directory
 
 
 def create_app(test_config=None):
@@ -22,7 +23,7 @@ def create_app(test_config=None):
 
     @app.route('/favicon.ico')
     def favicon():
-        return send_from_directory(os.path.join(app.root_path, "static"), "favicon.ico", mimetype='image/vnd.microsoft.com')
+        return send_from_directory(os.path.join(app.root_path, 'static'), 'favicon.ico', mimetype='image/vnd.microsoft.icon')
 
 
     from . import db

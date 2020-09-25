@@ -5,6 +5,7 @@
     {% if g.user %}
         <a class="action" href="{{ url_for('blog.create') }}">New</a>
     {% endif %}
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
 {% endblock %}
 
 {% block content %}
