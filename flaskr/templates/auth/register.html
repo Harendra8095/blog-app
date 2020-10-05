@@ -11,8 +11,12 @@
         placeholder="Enter username here" required>
         <label for="password">Password</label>
         <input type="password" name="password" id="password" 
-        onmouseover="this.type='text'" onmouseout="this.type='password'" 
         placeholder="Enter password here" required>
+        <input type="checkbox" onclick="show_password()" style="float: left;">
+        <div style="overflow: hidden; padding: 0px 0px 0px 5px;">
+            Show password
+        </div>
+
         <input type="submit" value="Register">
     </form>
 {% endblock %}
