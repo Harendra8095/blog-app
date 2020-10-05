@@ -7,9 +7,15 @@
 {% block content %}
     <form method="post">
         <label for="username">Username</label>
-        <input name="username" id="username" required>
+        <input name="username" id="username" 
+        placeholder="Enter username" required>
         <label for="password">Password</label>
-        <input type="password" name="password" id="password" required>
+        <input type="password" name="password" id="password" 
+        placeholder="Enter password" required>
+        <input type="checkbox" onclick="show_password()" style="float: left;">
+        <div style="overflow: hidden; padding: 0px 0px 0px 5px;">
+            Show password
+        </div>
         <input type="submit" value="Log In">
     </form>
 {% endblock %}
