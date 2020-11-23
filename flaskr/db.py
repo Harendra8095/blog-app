@@ -1,5 +1,7 @@
 import sqlite3
 
+# This is a test for git branching
+
 import click
 from flask import current_app, g
 from flask.cli import with_appcontext
